@@ -1,0 +1,61 @@
+.getAppSection {
+    text-align: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.appImage {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-bottom: 2px solid #102343;
+}
+
+.textContainer {
+    flex: 1;
+}
+
+.getAppSection .textContainer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.getAppSection .textContainer p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.storeButtons {
+    gap: 20px;
+}
+
+.storeButton {
+    width: 135px;
+    height: auto;
+    border-bottom: 5px solid #102343;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .getAppSection {
+        width: 100%;
+    }
+
+    .appImage {
+
+        width: 150px;
+    }
+
+    .storeButtons .storeButton {
+        width: 60px;
+        border: 3px solid #102343;
+        border-radius: 55px;
+        box-shadow: 4px 5px 5px 0 #696969;
+    }
+
+}

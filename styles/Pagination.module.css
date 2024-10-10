@@ -1,0 +1,76 @@
+/* Add this to your existing CSS module */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.popularItemsSection {
+    margin-top: 10px;
+}
+
+.popularItemsSection h2 {
+    font-weight: bold;
+    color: #102343;
+    font-size: 30px;
+    text-align: center;
+}
+
+.popularItemsSection {
+    text-align: center;
+}
+
+.pagination button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button.activePage {
+    background-color: #102343;
+    color: #fff;
+}
+
+.pagination button:hover:not(.activePage):not(:disabled) {
+    background-color: #ddd;
+}
+
+.itemCard {
+    margin-bottom: 15px;
+}
+
+.itemCard img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.itemCard h3 {
+    color: #4CAF50;
+}
+
+.viewItemButton {
+    background-color: #102343;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.viewReviewButton {
+    background-color: #0ea;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}

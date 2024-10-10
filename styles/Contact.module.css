@@ -1,0 +1,88 @@
+.contactContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.2rem;
+}
+
+.contactContainer h1 {
+    font-weight: bold;
+    border-bottom: 5px solid #0c88cc;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contactForm input,
+.contactForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contactForm textarea {
+    resize: vertical;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkboxContainer input {
+    margin-right: 10px;
+}
+
+.submitButton {
+    padding: 10px 15px;
+    background-color: #102343;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #0c88cc;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .contactContainer {
+        padding: 15px;
+    }
+
+    .submitButton {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contactContainer {
+        max-width: 80%;
+
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    .contactContainer {
+        max-width: 400px;
+    }
+}
