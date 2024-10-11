@@ -1,0 +1,73 @@
+.memesContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Oswald';
+}
+
+.memesContainer h1 {
+    color: #102343;
+    font-weight: bold;
+    border-bottom: 5px solid #102343;
+}
+
+.memeItem {
+    margin-bottom: 20px;
+    border: 1px solid #102343;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.memeItem h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #102343;
+    font-weight: bold;
+}
+
+.memeImage {
+    width: 100%;
+    height: auto;
+}
+
+.likeSection {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.likeButton {
+    background-color: #102343;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.buyButton {
+    background-color: #0ea;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+}
+
+@media (min-width: 769px) {
+    .memesContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .memeItem {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}

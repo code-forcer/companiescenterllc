@@ -1,0 +1,39 @@
+.authContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Oswald';
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.authInput {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.authButton {
+  padding: 10px;
+  background-color: #102343;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.authButton:hover {
+  background-color: #0ea;
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 15px;
+}
