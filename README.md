@@ -39,3 +39,9 @@ Doc mantra:
 A shopping cart with wheels.
 
 We are on motion always and every minute counts and tells of transaction
+
+
+ {/* Chat box */}
+          <div>
+          <Chatbox user={user} />
+          </div>

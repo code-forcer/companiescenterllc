@@ -44,7 +44,7 @@ const ItemDetails = ({ item }) => {
           <p className={styles.description}>{item.description}</p>
           <p className={styles.price}>Price: &#36;{item.price}</p>
           <button onClick={handleProceedToOrder} className={styles.orderButton}>
-            Proceed to Hire
+          Send a hire message
           </button>
         </div>
       </div>

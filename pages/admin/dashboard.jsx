@@ -5,7 +5,7 @@ import Logout from '@/components/Logout';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import axios from 'axios';
-
+import Chatbox from '@/components/Chatbox';
 export default function Dashboard() {
   const [user, setUser] = useState(null);
   const router = useRouter();
@@ -97,6 +97,15 @@ export default function Dashboard() {
 
     fetchUserData();
   }, [router]);
+   const [isChatModalOpen, setIsChatModalOpen] = useState(false);
+
+  const openChatModal = () => {
+    setIsChatModalOpen(true);
+  };
+
+  const closeChatModal = () => {
+    setIsChatModalOpen(false);
+  };
 
   return (
     user && (
@@ -112,7 +121,30 @@ export default function Dashboard() {
             </b>
           </h5>
           <small style={{ textAlign: 'center', fontWeight: 'bold' }}>Welcome to your mini-dashboard</small>
+          <hr />
+          {/* Chat box */}
+         {/* Button to open chat modal */}
+      <button className={styles.openChatBtn} onClick={openChatModal}>
+        Open Chat
+      </button>
 
+      {/* Chat Modal */}
+      {isChatModalOpen && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modalContent}>
+            <div className={styles.modalHeader}>
+              <h2>Chat</h2>
+              <button className={styles.closeModalBtn} onClick={closeChatModal}>
+                &times;
+              </button>
+            </div>
+            
+            {/* Chat box */}
+            <Chatbox user={user} receiver={{ name: 'Company' }} />
+          </div>
+        </div>
+      )}
+          {/* ends here */}
           <form onSubmit={handleUpload} className={styles.uploadForm}>
             <input
               type="text"

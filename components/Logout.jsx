@@ -9,5 +9,5 @@ export default function Logout() {
     router.push('/admin/login'); // Redirect to login page after logout
   };
 
-  return <button onClick={handleLogout} style={{color:'#ce1212'}}>Logout</button>;
+  return <><hr /><button onClick={handleLogout} style={{ color: '#ce1212', padding: '5px', border: '2px solid #102343',marginTop:'4px',borderRadius:'5px'}}>Logout</button></>
 }

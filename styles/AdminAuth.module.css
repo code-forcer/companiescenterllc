@@ -37,3 +37,50 @@
   color: red;
   margin-bottom: 15px;
 }
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Background overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeModalBtn {
+  color: #ce1212;
+  border: none;
+  font-size:30px;
+  cursor: pointer;
+}
+
+.openChatBtn {
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  width: 50%;
+  border-radius:10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+ }

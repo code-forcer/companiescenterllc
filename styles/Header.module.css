@@ -28,11 +28,11 @@
 }
 
 .navItem:hover {
-  color: #0ea4ff;
+  color: #fff;
 }
 
 .activeNavItem {
-  border-bottom: 3px solid #0ea4ff;
+  border-bottom: 3px solid #fff;
 }
 
 .searchForm {
@@ -98,7 +98,7 @@
 
 .getstarted {
 
-  border: 1px solid #102343;
+  border: 2px solid #fff;
   padding: 2px;
   border-radius: 5px;
   font-weight: bold;
