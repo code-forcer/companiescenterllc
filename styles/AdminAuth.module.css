@@ -1,0 +1,161 @@
+.authContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Roboto';
+  border: 1px solid #102343;
+  border-radius:0;
+  background-color: #ffff;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.authInput {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.authButton {
+  padding: 10px;
+  background-color: #102343;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.authButton:hover {
+  background-color: #0ea;
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Background overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeModalBtn {
+  color: #ce1212;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.successMessage{
+  color: #4CAF50;
+  font-weight: bold;
+}
+.openChatBtn {
+  padding: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.companyList {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.companyList h2{
+  text-decoration: underline;
+}
+.companyItem h3{
+    color: #1ea40c;
+}
+.companyItem button{
+  padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.companyList {
+  background-color: #eef4f9;
+}
+/* styles for the admin section and the table */
+.adminSection {
+  margin: 20px;
+  padding: 10px;
+}
+
+.itemTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.itemTable th, .itemTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.itemTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.itemTable td {
+  vertical-align: middle;
+}
+
+.itemImage {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+.deleteButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #e60000;
+}

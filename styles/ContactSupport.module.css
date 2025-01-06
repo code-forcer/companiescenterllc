@@ -1,0 +1,87 @@
+/* Styling for the contact support page */
+
+.contactSupportContainer {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.supportImage {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactForm h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.inputField,
+.textareaField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.textareaField {
+    height: 100px;
+    resize: none;
+}
+
+.submitBtn {
+    width: 100%;
+    background-color: #1EC40A;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #218838;
+}
+
+.backIcon {
+    position: absolute;
+
+    left: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}

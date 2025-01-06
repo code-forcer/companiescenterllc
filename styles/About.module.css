@@ -1,0 +1,57 @@
+/* src/styles/About.module.css */
+.container {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    padding: 2rem;
+    font-family: 'Roboto';
+    background-color: #fff;
+    color: #333;
+}
+
+/* About.module.css */
+
+.aboutUsSection {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.aboutTitle {
+    text-align: center;
+    color: #102343;
+    font-weight: bold;
+    border-bottom: 5px solid #102343;
+}
+
+.aboutText {
+    margin-bottom: 20px;
+}
+
+.aboutSubheading {
+    color: #102343;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.aboutList {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.aboutListItem {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.aboutListItem::before {
+    content: "• ";
+    color: #102343;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}

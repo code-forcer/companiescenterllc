@@ -1,0 +1,46 @@
+.adContainer {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.adImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.adContent {
+    flex-grow: 1;
+}
+
+.tags {
+    margin-bottom: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #102343;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.adTitle {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.adDescription {
+    font-size: 16px;
+    color: #666;
+}

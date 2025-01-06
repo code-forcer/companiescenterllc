@@ -1,0 +1,215 @@
+/* HomePage.module.css */
+
+.homepageContainer {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.heroSection {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.heroText h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #102343;
+}
+
+.heroText p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.ctaButton {
+    background-color: #ffdd57;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.heroImage img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    border-radius: 5px;
+}
+
+.featuresSection {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featuresSection h3 {
+    margin-bottom: 30px;
+    color: #102343;
+    text-decoration: underline;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featureItem {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.featureItem img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.popularItemsSection {
+    padding: 50px 20px;
+
+}
+
+.popularItemsSection h2 {
+    font-weight: bold;
+    color: #102343;
+    text-decoration: underline;
+}
+
+.itemsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.itemCard {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.itemCard img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.viewItemButton {
+    background-color: #102343;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.callToActionSection {
+    background-color: #102343;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .heroText h1 {
+        font-size:30px;
+    }
+
+    .heroText p {
+        font-size: 1rem;
+    }
+
+    .featuresSection {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #102343;
+
+    }
+
+    .featuresSection h2 {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .featuresSection .featureItem {
+        width: 80%;
+    }
+
+    .featuresSection .featureItem h3 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .featuresSection .featureItem img {
+        border-radius: 5px;
+    }
+
+    .featureCard {
+        max-width: 90%;
+        margin: 20px 0;
+    }
+
+    .ctaSection h2 {
+        font-size: 1.8rem;
+    }
+
+    .ctaButton {
+        font-size: 1rem;
+    }
+
+    .popularItemsSection {
+        width: 100%;
+    }
+
+    .popularItemsSection .itemCard {
+        width: 80%;
+        padding: 2px;
+        height: auto;
+    }
+
+    .heroSection .heroText {
+        width: 100%;
+        text-align: start;
+    }
+
+    .heroSection .heroText h1 {
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .heroSection .heroText p {
+        padding: 2px;
+        margin-bottom: 10px;
+    }
+
+    .heroSection .heroImage {
+        display: none;
+    }
+
+    .ctaButton {
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 20px;
+    }
+}

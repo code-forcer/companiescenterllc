@@ -1,0 +1,31 @@
+/* styles/Terms.module.css */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container h1 {
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.container  h2 {
+    color: #003366;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.container p {
+    margin: 0.5em 0;
+}
+
+.container hr {
+    margin: 2em 0;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}

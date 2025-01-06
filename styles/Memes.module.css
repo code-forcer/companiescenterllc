@@ -1,0 +1,134 @@
+.memesContainer {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.memesContainer h1 {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: underline;
+}
+
+.memesContainer > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.memeItem {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.memeItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.memeImage {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.memeItem h3, .memeItem ul, .memeItem p, .memeItem h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.memeItem ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.memeItem ul li {
+  margin: 0.25rem 0;
+}
+
+.likeSection {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.likeButton,
+.buyButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem 0 0;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.likeButton:hover {
+  background-color: #0056b3;
+}
+
+.buyButton {
+  background-color: #28a745;
+}
+
+.buyButton:hover {
+  background-color: #1e7e34;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .memesContainer > div {
+    grid-template-columns: 1fr;
+  }
+
+  .memeItem {
+    width: 100%;
+  }
+
+  .memesContainer h1 {
+    font-size: 2rem;
+  }
+}
+
+/* New Style for Banner and Logo */
+.banner {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a {
+  margin: 0 10px;
+  text-align: center;
+  color: #007bff;
+}
+
+.socialIcons a:hover {
+  color: #0056b3;
+  text-align: center;
+}
